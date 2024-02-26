@@ -19,6 +19,9 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="./parseBarcode.js"></script>
+    <script src="./barcodeReplicator.js"></script>
+    <script src="./fdaSearchandParse.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -92,7 +95,7 @@
         <![endif]-->
 
     <script>
-        var bagBarcode;
+       /* var bagBarcode;
         var barcodegs1
         var qtyData;
         $(document).ready(function () {
@@ -119,10 +122,7 @@
                     barcode = barcode.replace(" 17", String.fromCharCode(29) + "17");
                     barcode = barcode.replace(/\s/g, '');
                     barcodegs1 = "_1" + barcode.replace(new RegExp(String.fromCharCode(29).replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&'), 'g'), "_1");
-                    /* if(gs1){
-    var answer = parseBarcode(barcode);
-  answer.parsedCodeItems.forEach(parsedFDAAns);
-  }else{*/   var answer = parseBarcode(barcode);
+                   var answer = parseBarcode(barcode);
                     answer.parsedCodeItems.forEach(parsedAns);
 
 
@@ -166,7 +166,7 @@
             });
         });
 
-        /* Lp2824-plus or lp2824-z printer at 203 dpi*/
+       
         function printKitsSYR(zpl) {
 
 
@@ -190,10 +190,10 @@
             request.send(zpl);
 
 
-        }
+        }*/
 
 
-        function beginFDASearch(theNDC) {
+     /*   function beginFDASearch(theNDC) {
             //theNDC=theNDC.substring(0, theNDC.indexOf("-", 8));
             var test = theNDC.slice(6, 10);
             var ndc44 = theNDC.slice(0, 4) + "-" + theNDC.slice(4, 8)
@@ -230,7 +230,7 @@
             }
         }
         /*********************************GS1 parsing*************************************/
-        var ndc;
+       /* var ndc;
         var expDateMFG;
         var lot;
         
@@ -273,7 +273,7 @@
         }
 
         /**************************End of GS1 parsing*************************************/
-        var BrandName;
+      /*  var BrandName;
         var GenericName;
         var Package;
         function paseFDADrug(jsonObj) {
@@ -315,7 +315,7 @@
                 $('#dfieldTYPE').val(obj.product_type);
                 checkInputforLength();
             */
-            }
+          /*  }
             if (package.length == 1) {
                 $('#dfieldPACKAGE').val(package[0].description);
                 var quantityString = (package[0].description.substring(0, package[0].description.indexOf(" ")).replace(/\D/g, ""));
@@ -374,7 +374,7 @@
                          }
                      })*/
 
-            const url = "barcodeQTYByNDC.json";
+          /*  const url = "barcodeQTYByNDC.json";
             $.ajax({
                 dataType: "json",
                 url: url,
@@ -423,7 +423,7 @@
                 }
             });
 
-        }
+        }*/
 
     </script>
 </body>
