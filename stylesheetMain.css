@@ -1,0 +1,55 @@
+
+        #baxBags {
+            margin-top: 30px;
+
+        }
+
+        #baxBags2 {
+            margin-top: 30px;
+
+        }
+
+        #bags {
+            margin-top: 30px;
+
+        }
+
+        #searchbar2,
+        #searchbar3 {
+            width: 80%;
+        }
+
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .main{
+            margin: auto;
+            width: 80%;
+        }
+        #searchbar{
+            margin: auto;
+            width: 70%;
+        }
+        .mainTitle{
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 50%;
+        }
+        .form-control:focus {
+  box-shadow: none;
+}
+
+        input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+    

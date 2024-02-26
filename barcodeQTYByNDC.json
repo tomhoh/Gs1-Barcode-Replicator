@@ -1,0 +1,40 @@
+{
+	"qtyByNDC":[
+	{
+		"ndc": "0338004902",
+		"qty": "36",
+        "name": "Sodium Chloride 0.9% 250ml bag"
+	},
+    {
+		"ndc": "0338004948",
+		"qty": "25",
+        "name": "Sodium Chloride 0.9% 100ml bag"
+	},
+    {
+		"ndc": "0338004941",
+		"qty": "50",
+        "name": "Sodium Chloride 0.9% 50ml bag"
+	},
+    {
+		"ndc": "0378797093",
+		"qty": "30",
+        "name": "Ipratropium Bromide 2.5mg"
+	},
+    {
+		"ndc": "5175450011",
+		"qty": "25",
+        "name": "Sodium Bicarbonate"
+	},
+    {
+		"ndc": "0338001704",
+		"qty": "25",
+        "name": "Dextrose 5% 1000ml"
+	},
+    {
+		"ndc": "0338001702",
+		"qty": "25",
+        "name": "Dextrose 5% 250ml"
+	}
+]
+
+}
