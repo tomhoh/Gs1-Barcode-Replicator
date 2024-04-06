@@ -205,8 +205,8 @@ function paseFDADrug(jsonObj) {
 ^FT85,38^A0N,30,20^FDLOT: `+ lot + `^FS
 ^FT85,65^A0N,30,20^FDEXP: `+ expDateMFG + `^FS
 ^FT85,92^A0N,30,20^FD`+ BrandName + `^FS
-^FO35,22
-  ^BXN,2,200,,,,_
+^FO24,22
+  ^BXN,3,200,,,,_
  ^FD`+ barcodegs1 + `^FS
 
   ^PQ`+ quantityString + `,0,1,Y^XZ`;
@@ -215,6 +215,8 @@ function paseFDADrug(jsonObj) {
   printKitsSYR(zplString);
 
   $('#searchTxt').val('');
+  $('#searchTxt2').val('');
+  $('#searchTxt3').val('');
 }
 
 function checkForQty() {
@@ -223,7 +225,7 @@ function checkForQty() {
       if (entry.ndc.slice(0, 8) === ndc.slice(0, 8)) {
 
           quantityString = entry.qty;
-          alert(quantityString);
+         // alert(quantityString);
           return false;
       }
   });

@@ -47,7 +47,7 @@ answer.parsedCodeItems.forEach(parsedFDAAns);
             //alert("searching");
             barcodegs1 = "_1" + document.getElementById("searchTxt2").value + "_1";
             bagBarcode = document.getElementById("searchTxt2").value;
-            alert(bagBarcode + " " + gs1);
+           // alert(bagBarcode + " " + gs1);
             $('#searchTxt3').focus();
         }
     });
@@ -63,7 +63,7 @@ answer.parsedCodeItems.forEach(parsedFDAAns);
             //alert("searching");
             barcodegs1 = barcodegs1 + document.getElementById("searchTxt3").value;
             bagBarcode = bagBarcode + String.fromCharCode(29) + document.getElementById("searchTxt3").value;
-            alert(bagBarcode + " " + gs1);
+           // alert(bagBarcode + " " + gs1);
 
             var answer = parseBarcode(bagBarcode);
             answer.parsedCodeItems.forEach(parsedAns);
